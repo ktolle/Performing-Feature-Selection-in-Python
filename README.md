@@ -12,6 +12,8 @@ The Feature Selection Techniques covered are:
 * Recursive Feature Elimination (RFE)
 * RFE with Cross Validation (a favorite of mine as my students know)
 * SelectFromModel
+    * Lasso
+    * RandomForestClassifier
 * Extra Tree Classification
 
 The biggest problem with scikit's implementation of univariate feature selection algorithms is that they return numpy arrays when you call them making it very hard for a non-Python aficionado to reassociate that with the sores of the features in the model without doing some fairly unintuitive hijinks. And this is exactly what a data scientist wants to know--which features scored highest. They don't just want the model, they want to understand the model, interact with data providers to help them reine their instruments, display the best (and possible worst) variables and visualize them *in context*. It's not enough to see it on the raw data--it is needed on the scores as well.
